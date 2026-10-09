@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vidushi Vashishth — Business Analyst</title>
+<meta name="description" content="Portfolio of Vidushi Vashishth, Business Analyst — requirements, workflows and delivery across defence, government, enterprise and e‑commerce platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2EEE4;
+  --paper-2:#E9E3D6;
+  --ink:#15171C;
+  --ink-2:#4A4C52;
+  --ink-3:#8A877F;
+  --rule:#CFC7B6;
+  --grid:rgba(21,23,28,.045);
+  --accent:#D8431B;
+  --accent-soft:#F5D9CC;
+  --blue:#1F3A8A;
+  --card:#F8F5EE;
+  --serif:"Instrument Serif", Georgia, serif;
+  --sans:"Hanken Grotesk", "Helvetica Neue", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121316; --paper-2:#1A1B20; --ink:#EDE8DC; --ink-2:#B7B2A6; --ink-3:#7C786F;
+    --rule:#2E2F35; --grid:rgba(237,232,220,.04); --accent:#FF6A3D; --accent-soft:#3A2018;
+    --blue:#8EA8FF; --card:#18191D;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121316; --paper-2:#1A1B20; --ink:#EDE8DC; --ink-2:#B7B2A6; --ink-3:#7C786F;
+  --rule:#2E2F35; --grid:rgba(237,232,220,.04); --accent:#FF6A3D; --accent-soft:#3A2018;
+  --blue:#8EA8FF; --card:#18191D;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background-color:var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:28px 28px;
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+body::after{ /* grain */
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+::selection{background:var(--accent);color:var(--paper)}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb, var(--paper) 82%, transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font-family:var(--serif);font-size:26px;text-decoration:none;line-height:1}
+.logo span{color:var(--accent)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{text-decoration:none;color:var(--ink-2);transition:color .15s}
+nav ul a:hover{color:var(--accent)}
+.theme-btn{
+  border:1px solid var(--rule);background:transparent;color:var(--ink);width:34px;height:34px;border-radius:50%;
+  cursor:pointer;display:grid;place-items:center;transition:border-color .15s, transform .3s var(--ease)
+}
+.theme-btn:hover{border-color:var(--accent);transform:rotate(30deg)}
+
+/* ---------- hero ---------- */
+.hero{padding:88px 0 72px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:end}
+.doc-id{display:flex;gap:18px;flex-wrap:wrap;color:var(--ink-3);margin-bottom:28px}
+.doc-id b{color:var(--accent);font-weight:500}
+.status{display:inline-flex;align-items:center;gap:8px}
+.status i{width:8px;height:8px;border-radius:50%;background:#2FA36B;box-shadow:0 0 0 0 rgba(47,163,107,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(47,163,107,0)}100%{box-shadow:0 0 0 0 rgba(47,163,107,0)}}
+h1{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(64px, 11vw, 158px);line-height:.86;letter-spacing:-.02em;
+}
+h1 .l2{display:block;padding-left:.55em}
+h1 em{color:var(--accent);font-style:italic}
+.hero-role{
+  margin-top:28px;display:flex;align-items:center;gap:14px;font-size:20px;color:var(--ink-2)
+}
+.hero-role::before{content:"";width:48px;height:1px;background:var(--ink)}
+.hero-side{border-left:1px solid var(--rule);padding-left:32px}
+.hero-side p{font-size:19px;line-height:1.55;color:var(--ink-2)}
+.hero-side p strong{color:var(--ink);font-weight:600}
+.annot{
+  margin-top:22px;font-family:var(--mono);font-size:12px;color:var(--ink-3);
+  border:1px dashed var(--rule);padding:12px 14px;border-radius:4px;line-height:1.7
+}
+.annot span{color:var(--accent)}
+.cta-row{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;text-decoration:none;
+  font-weight:600;font-size:15px;border:1px solid var(--ink);transition:all .2s var(--ease)
+}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--accent);border-color:var(--accent)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn svg{transition:transform .2s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+
+/* process flow */
+.flow{margin-top:72px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:22px 0}
+.flow-head{display:flex;justify-content:space-between;color:var(--ink-3);margin-bottom:16px;gap:12px}
+.flow svg{width:100%;height:auto;display:block}
+.flow .node rect{fill:var(--card);stroke:var(--ink);stroke-width:1.2}
+.flow .node.hl rect{fill:var(--accent);stroke:var(--accent)}
+.flow .node text{font-family:var(--mono);font-size:12px;fill:var(--ink);text-anchor:middle;letter-spacing:.04em}
+.flow .node.hl text{fill:#fff}
+.flow .node .sub{font-size:10px;fill:var(--ink-3)}
+.flow .node.hl .sub{fill:rgba(255,255,255,.75)}
+.flow .edge{stroke:var(--ink);stroke-width:1.2;fill:none;stroke-dasharray:4 4;animation:dash 1.2s linear infinite}
+.flow .arrow{fill:var(--ink)}
+@keyframes dash{to{stroke-dashoffset:-16}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--rule)}
+.stat{padding:30px 24px 30px 0}
+.stat + .stat{border-left:1px solid var(--rule);padding-left:24px}
+.stat .n{font-family:var(--serif);font-size:64px;line-height:1}
+.stat .n sup{font-size:.45em;color:var(--accent);vertical-align:top;position:relative;top:.2em}
+.stat .mono{color:var(--ink-3);margin-top:8px;display:block}
+
+/* ---------- sections ---------- */
+section{padding:110px 0 0}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:48px;align-items:baseline}
+.sec-num{color:var(--accent)}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(42px,6vw,76px);line-height:.95;letter-spacing:-.01em}
+h2 em{font-style:italic;color:var(--ink-3)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:200px 1fr 1fr;gap:32px}
+.about-grid .lead{font-family:var(--serif);font-size:30px;line-height:1.25;grid-column:2/4}
+.about-grid .lead em{color:var(--accent)}
+.about-grid p.col{color:var(--ink-2)}
+.about-grid p.col:nth-of-type(2){grid-column:2}
+.deliverables{grid-column:2/4;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{
+  font-family:var(--mono);font-size:12px;padding:6px 12px;border:1px solid var(--rule);border-radius:999px;
+  background:var(--card);color:var(--ink-2);transition:all .15s
+}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+
+/* projects */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 28px 232px}
+.filter{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;
+  padding:9px 16px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink-2);cursor:pointer;
+  transition:all .15s
+}
+.filter:hover{border-color:var(--ink);color:var(--ink)}
+.filter[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filter .ct{opacity:.55;margin-left:6px}
+
+.cases{border-top:1px solid var(--ink)}
+.case{
+  border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:200px 1fr auto;gap:32px;
+  padding:30px 0;cursor:pointer;position:relative;
+  transition:background .2s;
+}
+.case::before{
+  content:"";position:absolute;left:-32px;right:-32px;top:0;bottom:0;background:var(--card);z-index:-1;
+  opacity:0;transition:opacity .2s
+}
+.case:hover::before,.case.open::before{opacity:1}
+.case.hide{display:none}
+.case-meta{display:flex;flex-direction:column;gap:6px}
+.case-meta .id{color:var(--accent)}
+.case-meta .mono{color:var(--ink-3)}
+.case h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,44px);line-height:1;letter-spacing:-.005em}
+.case h3 small{font-family:var(--sans);font-size:17px;color:var(--ink-2);display:block;margin-top:10px;letter-spacing:0;line-height:1.4}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tag{font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:3px;background:var(--paper-2);color:var(--ink-2)}
+.tag.sector{background:var(--accent-soft);color:var(--accent)}
+.toggle{
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);display:grid;place-items:center;align-self:start;
+  transition:all .25s var(--ease);background:var(--paper)
+}
+.case:hover .toggle{border-color:var(--ink)}
+.case.open .toggle{transform:rotate(45deg);background:var(--accent);border-color:var(--accent);color:#fff}
+.case-body{
+  grid-column:2/4;display:grid;grid-template-rows:0fr;transition:grid-template-rows .22s cubic-bezier(.33,1,.68,1)
+}
+.case.open .case-body{grid-template-rows:1fr}
+.case-body > div{overflow:hidden}
+.case-inner{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;padding-top:22px}
+.case-inner ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.case-inner li{padding-left:26px;position:relative;color:var(--ink-2)}
+.case-inner li::before{content:"→";position:absolute;left:0;color:var(--accent);font-family:var(--mono)}
+.scope{border-left:1px solid var(--rule);padding-left:24px}
+.tag.has-mock{background:var(--ink);color:var(--paper)}
+.mock{margin-top:24px}
+.mock-btn{
+  display:block;width:100%;padding:0;border:1px solid var(--rule);border-radius:14px;overflow:hidden;cursor:zoom-in;
+  background:var(--mbg);position:relative
+}
+.mock-btn img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:var(--mpos,center);transition:transform .6s var(--ease)}
+.mock.natural .mock-btn img{aspect-ratio:auto}
+.mock-btn:hover img{transform:scale(1.025)}
+.mock-btn::after{
+  content:"⤢";position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(21,23,28,.85);color:#fff;font-size:16px;opacity:0;transform:scale(.8);transition:all .2s var(--ease)
+}
+.mock-btn:hover::after,.mock-btn:focus-visible::after{opacity:1;transform:none}
+.mock figcaption{color:var(--ink-3);margin-top:10px}
+.lightbox{
+  border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh;margin:auto;overflow:visible
+}
+.lightbox::backdrop{background:rgba(10,11,13,.86);backdrop-filter:blur(4px)}
+.lightbox img{display:block;max-width:100%;max-height:86vh;border-radius:12px;object-fit:contain}
+.lightbox p{color:#CFC9BC;margin-top:12px;text-align:center}
+.lightbox .close{
+  position:absolute;top:-16px;right:-16px;width:40px;height:40px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--accent);color:#fff;font-size:20px;line-height:1
+}
+.scope .mono{color:var(--ink-3);display:block;margin-bottom:12px}
+.scope ol{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:0}
+.scope ol li{position:relative;counter-increment:s;padding:8px 0 8px 34px;border-bottom:1px dashed var(--rule);font-size:15px;color:var(--ink)}
+.scope ol li::before{content:counter(s,decimal-leading-zero);position:absolute;font-family:var(--mono);left:0;color:var(--ink-3);font-size:12px;top:10px}
+
+/* experience */
+.xp{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.xp + .xp{margin-top:56px}
+.xp-when{color:var(--ink-3)}
+.xp-when b{display:block;color:var(--ink);font-weight:500;margin-bottom:4px}
+.xp-card{border-top:1px solid var(--ink);padding-top:22px}
+.xp-card h3{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.05}
+.xp-card h3 span{color:var(--ink-3);font-style:italic}
+.xp-card ul{list-style:none;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:14px 36px}
+.xp-card li{color:var(--ink-2);padding-left:18px;position:relative;font-size:16px}
+.xp-card li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--accent)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.matrix{border-top:1px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.row{padding:14px 0;border-bottom:1px solid var(--rule)}
+.row:first-child{grid-column:1/-1}
+.row h4{font-weight:600;font-size:14px;margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
+.row h4 .mono{color:var(--accent);font-weight:400;font-size:11px}
+.row .chips{display:flex;flex-wrap:wrap;gap:5px}
+.row .chip{font-size:11px;padding:3px 9px}
+#skills .sec-head{margin-bottom:28px}
+
+/* education */
+.edu{display:grid;grid-template-columns:200px repeat(3,1fr);gap:32px}
+.edu-card{border-top:1px solid var(--ink);padding-top:18px}
+.edu-card .score{font-family:var(--serif);font-size:56px;line-height:1;margin:12px 0 6px}
+.edu-card .score small{font-size:.4em;color:var(--ink-3)}
+.edu-card h4{font-weight:600;font-size:16px}
+.edu-card p{color:var(--ink-2);font-size:15px}
+.edu-card .mono{color:var(--ink-3)}
+
+/* contact */
+.contact{margin-top:140px;background:var(--ink);color:var(--paper);padding:96px 0 40px;position:relative;overflow:hidden}
+.contact::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.contact .wrap{position:relative}
+.contact .mono{color:#8A877F}
+.contact h2{font-size:clamp(56px,10vw,140px);margin:18px 0 40px;color:#F2EEE4}
+.contact h2 em{color:var(--accent)}
+.links{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.18)}
+.links a{
+  text-decoration:none;padding:26px 0;display:flex;flex-direction:column;gap:6px;color:#F2EEE4;
+  border-bottom:1px solid rgba(255,255,255,.18);transition:color .15s
+}
+.links a + a{padding-left:24px;border-left:1px solid rgba(255,255,255,.18)}
+.links a span:last-child{font-family:var(--serif);font-size:28px}
+.links a:hover{color:var(--accent)}
+.foot{display:flex;justify-content:space-between;margin-top:64px;gap:16px;flex-wrap:wrap}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .contact{background:#0A0B0D;border-top:1px solid var(--rule)} }
+:root[data-theme="dark"] .contact{background:#0A0B0D;border-top:1px solid var(--rule)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease), transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.load{opacity:0;transform:translateY(30px);animation:up 1s var(--ease) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.load{opacity:1;transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:28px}
+  .sec-head,.about-grid,.xp,.skills,.edu{grid-template-columns:1fr}
+  .about-grid .lead,.about-grid p.col:nth-of-type(2),.deliverables{grid-column:auto}
+  .filters{margin-left:0}
+  .case{grid-template-columns:1fr auto;gap:16px}
+  .case-meta{grid-column:1/3;flex-direction:row;gap:14px;flex-wrap:wrap}
+  .case-body{grid-column:1/3}
+  .case-inner{grid-template-columns:1fr;gap:24px}
+  .scope{border-left:0;padding-left:0}
+  .xp-card ul{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--rule)}
+  .edu > div:first-child{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  nav ul{display:none}
+  .hero{padding-top:56px}
+  h1 .l2{padding-left:.3em}
+  .stat .n{font-size:48px}
+  .stat{padding-right:12px}
+  .stat + .stat{padding-left:16px}
+  section{padding-top:80px}
+  .matrix{grid-template-columns:1fr}
+  .links{grid-template-columns:1fr}
+  .links a + a{padding-left:0;border-left:0}
+  .case::before{left:-16px;right:-16px}
+  .flow-head span:last-child{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">V<span>.</span>V</a>
+    <ul class="mono">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Case Files</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle colour theme">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="doc-id mono load" style="animation-delay:.05s">
+      <span>DOC — <b>BA/PORTFOLIO</b></span>
+      <span>REV 2026.10</span>
+      <span class="status"><i></i>Business Analyst @ Webority Technologies</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="load" style="animation-delay:.15s">Vidushi<span class="l2"><em>Vashishth</em></span></h1>
+        <div class="hero-role load" style="animation-delay:.35s">Business Analyst · Gurugram, India</div>
+      </div>
+      <div class="hero-side load" style="animation-delay:.5s">
+        <p>I turn <strong>ambiguous business needs</strong> into requirements that development teams can build: BRDs, FRDs, user stories and workflows for <strong>defence, government, enterprise and e-commerce</strong> platforms.</p>
+        <div class="annot">
+          <span>// note:</span> 1.5+ yrs in client-facing IT services.<br>
+          <span>// note:</span> B.Tech CSE. I started as a developer.
+        </div>
+        <div class="cta-row">
+          <a href="#work" class="btn solid">View case files
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="mailto:vvidushi41@gmail.com" class="btn ghost">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow load" style="animation-delay:.7s" aria-hidden="true">
+      <div class="flow-head mono"><span>FIG. 01 — How I work</span><span>requirement → release</span></div>
+      <svg viewBox="0 0 1100 90" preserveAspectRatio="xMidYMid meet">
+        <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="arrow" d="M0 0L10 5L0 10z"/></marker></defs>
+        <g class="node"><rect x="0" y="15" width="170" height="60" rx="30"/><text x="85" y="44">DISCOVER</text><text class="sub" x="85" y="60">stakeholder sessions</text></g>
+        <path class="edge" d="M172 45H226" marker-end="url(#ar)"/>
+        <g class="node"><rect x="232" y="15" width="170" height="60" rx="4"/><text x="317" y="44">ANALYSE</text><text class="sub" x="317" y="60">RFPs · data · journeys</text></g>
+        <path class="edge" d="M404 45H458" marker-end="url(#ar)"/>
+        <g class="node hl"><rect x="464" y="15" width="170" height="60" rx="4"/><text x="549" y="44">SPECIFY</text><text class="sub" x="549" y="60">BRD · FRD · stories</text></g>
+        <path class="edge" d="M636 45H690" marker-end="url(#ar)"/>
+        <g class="node"><rect x="696" y="15" width="170" height="60" rx="4"/><text x="781" y="44">DESIGN</text><text class="sub" x="781" y="60">flows · Figma · Visio</text></g>
+        <path class="edge" d="M868 45H922" marker-end="url(#ar)"/>
+        <g class="node"><rect x="928" y="15" width="170" height="60" rx="30"/><text x="1013" y="44">VALIDATE</text><text class="sub" x="1013" y="60">sprints · UAT</text></g>
+      </svg>
+    </div>
+
+    <div class="stats">
+      <div class="stat rv"><div class="n">1.5<sup>+</sup></div><span class="mono">Years as a BA</span></div>
+      <div class="stat rv"><div class="n">7</div><span class="mono">Client platforms</span></div>
+      <div class="stat rv"><div class="n">2</div><span class="mono">Indian Army portals</span></div>
+      <div class="stat rv"><div class="n">4</div><span class="mono">Sectors: Defence · Gov · Enterprise · E-com</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="mono sec-num">§01 — Introduction</span><h2>About <em>me</em></h2></div>
+    <div class="about-grid">
+      <div></div>
+      <p class="lead rv">A detail-oriented Business Analyst who sits between <em>the people with the problem</em> and <em>the people building the solution</em>. My job is to make sure both are describing the same thing.</p>
+      <div></div>
+      <p class="col rv">I lead requirement-gathering sessions, prepare BRDs, FRDs, use cases and user stories, and turn them into process flows and wireframes in Figma and Visio. I facilitate Agile ceremonies, manage sprint lifecycles and run UAT through to sign-off.</p>
+      <p class="col rv">I also manage end-to-end government tender bids on the GeM portal, from RFP analysis and B2G bid structuring to compliance documentation. Before that, I researched AI and LLM solutions at Nebula9.ai, and as a B.Tech CSE student I built apps for PGIMER Chandigarh and Gurugram Police.</p>
+      <div class="deliverables rv">
+        <span class="chip">BRD</span><span class="chip">FRD</span><span class="chip">Use Cases</span><span class="chip">User Stories</span><span class="chip">Process Flows</span><span class="chip">Wireframes</span><span class="chip">UAT Test Cases</span><span class="chip">GeM Bids</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="mono sec-num">§02 — Experience</span><h2>Where I've <em>worked</em></h2></div>
+
+    <div class="xp rv">
+      <div class="xp-when mono"><b>Dec 2025 — Present</b>Gurugram</div>
+      <div class="xp-card">
+        <h3>Business Analyst <span>at Webority Technologies</span></h3>
+        <ul>
+          <li>Led requirement-gathering sessions across enterprise, e-commerce, government and defence-sector platforms.</li>
+          <li>Prepared detailed BRDs and FRDs, translating client needs into structured technical use cases.</li>
+          <li>Designed solution workflows and wireframes in Figma and Visio.</li>
+          <li>Facilitated Agile ceremonies and managed sprint lifecycles across the SDLC.</li>
+          <li>Owned stakeholder communication and led UAT, including writing and validating test cases.</li>
+          <li>Managed GeM portal tender bids: RFP analysis, B2G bid structuring and compliance documentation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="xp rv">
+      <div class="xp-when mono"><b>Oct 2024 — Sep 2025</b>Nebula9.ai</div>
+      <div class="xp-card">
+        <h3>Associate Consultant <span>— Business Analyst</span></h3>
+        <ul>
+          <li>Conducted market and competitive research for AI and LLM solutions.</li>
+          <li>Analysed data patterns and business requirements for strategic AI implementation.</li>
+          <li>Worked with cross-functional teams to produce actionable business insights.</li>
+          <li>Supported development of client-facing AI dashboards and reporting tools.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="mono sec-num">§03 — Toolkit</span><h2>Core <em>skills</em></h2></div>
+    <div class="skills">
+      <div></div>
+      <div class="matrix" id="matrix"></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="mono sec-num">§04 — Projects</span><h2>Case <em>files</em></h2></div>
+    <div class="filters rv" role="group" aria-label="Filter projects">
+      <button class="filter" data-f="all" aria-pressed="true">All<span class="ct"></span></button>
+      <button class="filter" data-f="gov" aria-pressed="false">Defence &amp; Gov<span class="ct"></span></button>
+      <button class="filter" data-f="ent" aria-pressed="false">Enterprise &amp; Commerce<span class="ct"></span></button>
+      <button class="filter" data-f="acad" aria-pressed="false">Academic<span class="ct"></span></button>
+    </div>
+    <div class="cases" id="cases"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="mono sec-num">§05 — Education</span><h2>Education</h2></div>
+    <div class="edu">
+      <div></div>
+      <div class="edu-card rv"><span class="mono">2021 — 2025</span><div class="score">7.06<small> CGPA</small></div><h4>B.Tech, Computer Science</h4><p>BML Munjal University, Gurugram</p></div>
+      <div class="edu-card rv"><span class="mono">2020 — 2021</span><div class="score">86.6<small>%</small></div><h4>Senior Secondary, CBSE</h4><p>St. Francis Convent School, Bareilly</p></div>
+      <div class="edu-card rv"><span class="mono">2018 — 2019</span><div class="score">95.2<small>%</small></div><h4>High School, CBSE</h4><p>St. Francis Convent School, Bareilly</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <span class="mono">§06 — Contact</span>
+    <h2>Have a problem that<br>needs <em>clear requirements?</em></h2>
+    <div class="links">
+      <a href="mailto:vvidushi41@gmail.com"><span class="mono">Email</span><span>vvidushi41@gmail.com</span></a>
+      <a href="tel:+918630841488"><span class="mono">Phone</span><span>+91 86308 41488</span></a>
+      <a href="https://www.vvidushi.com" target="_blank" rel="noopener"><span class="mono">Web</span><span>vvidushi.com ↗</span></a>
+    </div>
+    <div class="foot mono"><span>© 2026 Vidushi Vashishth</span><span>Built as a spec. Signed off.</span></div>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Mockup preview">
+  <button class="close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+  <p class="mono" id="lbCap"></p>
+</dialog>
+
+<script>
+const CASES = [
+  {id:"CF-01", cat:"gov", sector:"Defence", client:"Indian Army",
+   title:"MAARK", sub:"Marital Grievance & Maintenance Allowance Case Portal",
+   tags:["Case Management","Workflow Mapping","Approvals"],
+   points:[
+     "Analysed and documented requirements for a portal that manages marital grievance and maintenance allowance cases involving service personnel and their spouses, from registration to closure.",
+     "Mapped end-to-end case workflows covering complaints, family details, counselling, document management, financial recommendations, approvals and final orders.",
+     "Structured case-record and monitoring requirements so authorised officers can keep organised records and track action across Army formations."
+   ],
+   scope:["Complaint registration","Family & counselling records","Document management","Financial recommendations","Approvals & final orders"]},
+  {id:"CF-02", cat:"gov", sector:"Defence", client:"Indian Army",
+   title:"CUT-HRV", sub:"Human Rights Violation Case Management Portal",
+   tags:["Case Management","Investigations","Legal Tracking"],
+   points:[
+     "Documented requirements for recording alleged human rights violation incidents, including complainant, victim and operational details.",
+     "Mapped tracking workflows for military and civil investigations, legal proceedings, supporting documents and case progress.",
+     "Defined monitoring requirements so case action can be tracked across Army formations."
+   ],
+   scope:["Incident recording","Military investigations","Civil investigations","Legal proceedings","Progress monitoring"]},
+  {id:"CF-03", cat:"gov", sector:"Government", client:"Quality Council of India",
+   title:"QCI SAMAR", sub:"Enterprise Assessment & Certification Platform",
+   tags:["Multi-role Portal","Mobile App","Integrations"],
+   points:[
+     "Gathered requirements and mapped portal flows across enterprise, admin, operations and committee user roles for a multi-stage certification workflow.",
+     "Documented assessment, scheduling and rating-committee workflows, including DRDO labs coordination and role-based admin console access.",
+     "Specified assessor mobile app flows (assessment, attendance, punch in/out, offline mode) and coordinated payment gateway and ZOHO Desk integrations."
+   ],
+   scope:["4 user-role portals","Rating committee workflow","Assessor app & offline mode","Payment gateway","ZOHO Desk integration"],
+   mock:{src:"mockups/qci-samar.jpg", bg:"#E1EBFC", alt:"QCI SAMAR sign-up screen, enterprise dashboard and question-bank admin screens"}},
+  {id:"CF-04", cat:"ent", sector:"Enterprise", client:"BRRF",
+   title:"BRRF Survey", sub:"Field Survey Platform & Control Panel",
+   tags:["Dynamic Forms","RBAC","Scheduling"],
+   points:[
+     "Gathered and documented requirements for a dynamic question engine that supports conditional flows, drag-and-drop sequencing and specialised question types.",
+     "Structured control-panel workflows for survey review, resubmission, response editing and PDF export, and defined role-based access control across stakeholders.",
+     "Mapped appointment and calendar management, with notifications that use the correct timezone for field scheduling."
+   ],
+   scope:["Conditional question engine","Review & resubmission","PDF export","Role-based access","Timezone-aware calendar"],
+   mock:{src:"mockups/brrf-survey.jpg", bg:"#F6D9D9", pos:"center 45%", alt:"BRRF Survey app screens: login, registration, survey questions, dispenser photos and appointments"}},
+  {id:"CF-05", cat:"ent", sector:"E-commerce", client:"BRRF",
+   title:"BRRF Commerce", sub:"B2B Ordering Platform, mobile-first",
+   tags:["B2B","Checkout","Order Tracking"],
+   points:[
+     "Documented authentication, onboarding, multi-site management, catalogue, quote and checkout flows for a mobile-first B2B ordering app.",
+     "Mapped order management, tracking and account/profile journeys so buyers can follow orders after purchase."
+   ],
+   scope:["Auth & onboarding","Multi-site management","Catalogue & quotes","Checkout","Order tracking"],
+   mock:{src:"mockups/brrf-commerce.jpg", bg:"#E3B3B4", alt:"BRRF ordering app screens: login, site overview, cart, checkout, order confirmation and dashboard"}},
+  {id:"CF-06", cat:"ent", sector:"Marketplace", client:"DealYards",
+   title:"DealYards", sub:"Deals & Marketplace Platform",
+   tags:["User Stories","Acceptance Criteria","Backlog"],
+   points:[
+     "Captured business requirements and translated them into user stories and acceptance criteria.",
+     "Mapped user journeys for deal discovery and transactions.",
+     "Supported backlog grooming and sprint planning to prioritise high-value features."
+   ],
+   scope:["Deal discovery journeys","Transaction flows","User stories & AC","Backlog grooming"],
+   mock:{src:"mockups/dealyards.jpg", bg:"#F3C7BE", alt:"DealYards website screens: homepage hero, farmland listings with WhatsApp OTP login, and market insights dashboard"}},
+  {id:"CF-07", cat:"ent", sector:"Clean Energy", client:"CLN Energy",
+   title:"CLN Energy", sub:"Clean-Energy Corporate & Product Platform",
+   tags:["Information Architecture","UAT"],
+   points:[
+     "Gathered requirements and structured the information architecture for a global-facing corporate platform.",
+     "Supported UAT and feedback cycles before launch."
+   ],
+   scope:["Requirements","Information architecture","UAT & feedback cycles","Launch readiness"],
+   mock:{src:"mockups/cln-energy.jpg", bg:"#D9E5CE", alt:"CLN Energy website screens: Powering the World homepage, lithium solutions catalogue and global presence map"}},
+  {id:"AP-01", cat:"acad", sector:"Healthcare", client:"PGIMER Chandigarh · Jun–Dec 2024",
+   title:"Patient Records", sub:"Records management for Type 1 Diabetes patients",
+   tags:["Django","MySQL","Healthcare"],
+   points:[
+     "Worked with PGIMER Chandigarh to build patient records management software for Type 1 Diabetes patients.",
+     "Learned how the healthcare domain works by working directly with clinicians."
+   ],
+   scope:["Patient records","Django backend","MySQL database"]},
+  {id:"AP-02", cat:"acad", sector:"Security", client:"BML Munjal University · Feb–May 2024",
+   title:"UniSphere", sub:"University platform, access control & security",
+   tags:["Flutter","Firebase","Security Rules"],
+   points:[
+     "Worked with the database security team as a cyber security analyst.",
+     "Implemented access control features using Firebase security rules."
+   ],
+   scope:["Access control","Firebase security rules","Flutter app"]},
+  {id:"AP-03", cat:"acad", sector:"Public Sector", client:"Gurugram Police HQ · Feb–May 2023",
+   title:"Leave Management", sub:"Mobile leave-application system for ~8,000 officers",
+   tags:["Flutter","Firebase","Sprint Planning"],
+   points:[
+     "Built a mobile leave-application system for about 8,000 Gurugram Police officers.",
+     "Owned database design, sprint planning and user testing."
+   ],
+   scope:["~8,000 users","Database design","Sprint planning","User testing"]}
+];
+
+const SKILLS = [
+  ["Core","Business Analysis & Requirements",["Requirement Gathering","Requirement Analysis","BRDs","FRDs","Use Cases","User Stories","Stakeholder Alignment","Process Flows","Wireframing"]],
+  ["B2G","Government Tenders & Bids",["GeM Portal","RFP / Tender Analysis","B2G Bid Structuring","Compliance Documentation","Technical & Operational Specs"]],
+  ["Delivery","Agile & Project Management",["Agile","Sprint Planning","Backlog Management","Scrum","UAT & Test Cases"]],
+  ["Design","UI/UX & Research",["UI/UX Research","User Journey Analysis","Usability Insights","Figma","Visio"]],
+  ["Data","Data & Reporting",["MS Excel","PowerPoint","Power BI","Google AppSheet","Firebase Analytics"]],
+  ["Build","Technical",["Python","SQL","HTML/CSS","FlutterFlow","Firebase","GitHub","Android Studio","Canva"]],
+  ["AI","AI Tools",["Gemini","Claude Code","Claude Design","Google Stitch"]]
+];
+
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const plus = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>';
+
+document.getElementById("cases").innerHTML = CASES.map((c,i)=>`
+  <article class="case rv" data-cat="${c.cat}" tabindex="0" aria-expanded="false">
+    <div class="case-meta">
+      <span class="mono id">${c.id}</span>
+      <span class="mono">${esc(c.client)}</span>
+    </div>
+    <div>
+      <h3>${esc(c.title)}<small>${esc(c.sub)}</small></h3>
+      <div class="tags"><span class="tag sector">${esc(c.sector)}</span>${c.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}${c.mock?`<span class="tag has-mock">◧ Mockups</span>`:""}</div>
+    </div>
+    <div class="toggle">${plus}</div>
+    <div class="case-body"><div>
+      ${c.mock?`<figure class="mock${c.mock.natural?" natural":""}" style="--mbg:${c.mock.bg};--mpos:${c.mock.pos||"center"}"><button type="button" class="mock-btn" aria-label="Enlarge ${esc(c.title)} mockups"><img src="${c.mock.src}" alt="${esc(c.mock.alt)}" loading="lazy"></button><figcaption class="mono">FIG. ${c.id} — product screens · click to enlarge</figcaption></figure>`:""}
+      <div class="case-inner">
+        <ul>${c.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>
+        <div class="scope"><span class="mono">Scope covered</span><ol>${c.scope.map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>
+      </div>
+    </div></div>
+  </article>`).join("");
+
+
+document.querySelectorAll(".case").forEach(el=>{
+  const toggle = ()=>{ const o = el.classList.toggle("open"); el.setAttribute("aria-expanded", o); };
+  el.addEventListener("click", toggle);
+  el.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); toggle(); }});
+});
+
+// filters
+const counts = {all:CASES.length};
+CASES.forEach(c=>counts[c.cat]=(counts[c.cat]||0)+1);
+document.querySelectorAll(".filter").forEach(b=>{
+  b.querySelector(".ct").textContent = String(counts[b.dataset.f]).padStart(2,"0");
+  b.addEventListener("click", ()=>{
+    document.querySelectorAll(".filter").forEach(x=>x.setAttribute("aria-pressed", x===b));
+    const f = b.dataset.f;
+    document.querySelectorAll(".case").forEach(c=>{
+      c.classList.toggle("hide", f!=="all" && c.dataset.cat!==f);
+      c.classList.add("in");
+    });
+  });
+});
+
+document.getElementById("matrix").innerHTML = SKILLS.map(([k,h,items])=>`
+  <div class="row rv"><h4><span class="mono">${k}</span>${esc(h)}</h4>
+  <div class="chips">${items.map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></div>`).join("");
+
+// mockup lightbox
+const lb = document.getElementById("lightbox"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+document.querySelectorAll(".mock-btn").forEach(b=>{
+  b.addEventListener("click", e=>{
+    e.stopPropagation();
+    const img = b.querySelector("img");
+    lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+    lb.showModal();
+  });
+  b.addEventListener("keydown", e=>e.stopPropagation());
+});
+document.getElementById("lbClose").addEventListener("click", ()=>lb.close());
+lb.addEventListener("click", e=>{ if(e.target===lb) lb.close(); });
+
+// reveal on scroll
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.12, rootMargin:"0px 0px -40px 0px"}) : null;
+document.querySelectorAll(".rv").forEach((el,i)=>{
+  if(!io){ el.classList.add("in"); return; }
+  const sib = [...el.parentElement.children].filter(x=>x.classList.contains("rv"));
+  el.style.transitionDelay = (sib.indexOf(el)%6)*70 + "ms";
+  io.observe(el);
+});
+
+// theme toggle
+const root = document.documentElement;
+try{ const t = localStorage.getItem("vv-theme"); if(t) root.dataset.theme = t; }catch(e){}
+document.getElementById("themeBtn").addEventListener("click", ()=>{
+  const dark = root.dataset.theme ? root.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+  try{ localStorage.setItem("vv-theme", root.dataset.theme); }catch(e){}
+});
+</script>
+</body>
+</html>
